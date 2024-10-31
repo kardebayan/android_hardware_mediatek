@@ -14,7 +14,9 @@ android_app {
     platform_apis: true,
 
     optimize: {
+        optimize: true,
         proguard_flags_files: ["proguard.flags"],
+        shrink_resources: true,
     },
     jni_libs: ["libjni_poweroffalarm"],
     required: [
