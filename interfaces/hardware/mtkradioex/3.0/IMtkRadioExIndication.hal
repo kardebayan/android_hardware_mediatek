@@ -207,4 +207,7 @@ interface IMtkRadioExIndication {
 
     oneway nrSysInfoInd(android.hardware.radio@1.0::RadioIndicationType type,
         vec<int32_t> nrSysInfos);
+
+    oneway oscFreqSwitchedInd(android.hardware.radio@1.0::RadioIndicationType type,
+        int32_t state);
 };
